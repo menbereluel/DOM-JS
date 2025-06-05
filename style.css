@@ -12,3 +12,12 @@
     box-shadow: 2px 0 10px;
      background-color: #ddddd5;
 }
+#click-button{
+    padding:16px 26px;
+    margin-left: 50%;
+    border:none;
+    background-color: rgb(181, 230, 181);
+    color: rgb(15, 13, 13);
+    border-radius: 5px;
+    cursor: pointer;
+}

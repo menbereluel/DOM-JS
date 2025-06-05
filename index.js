@@ -71,10 +71,16 @@ function setFontSize(list, size) {
   });
 }
 
+const clickButton=document.getElementById('click-button');
+clickButton.addEventListener('click',()=>{
+    clickButton.style.backgroundColor = 'green';
+    clickButton.textContent ='BUY!!';
+});
 
 setFontSize(fruitListItems, '30px');
 setFontSize(vegListItems, '30px');
 
 
-const fruitList = document.getElementById("fruList");
-const fruitBtn = document.getElementById("addFruitBtn");
+
+
+
