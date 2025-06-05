@@ -9,13 +9,13 @@ styleParagraph.style.marginLeft='40%';
 const vegetableList=document.getElementById('vegList')
 vegetableList.style.display='flex';
 vegetableList.style.gap='40px';
-vegetableList.style.marginLeft='10%';
+vegetableList.style.marginLeft='25%';
 vegetableList.style.listStyle='none';
 
 const lists=document.getElementById('fruList')
 lists.style.display='flex';
 lists.style.gap='40px';
-lists.style.marginLeft='10%';
+lists.style.marginLeft='25%';
 lists.style.listStyle='none';
 
 
@@ -33,8 +33,9 @@ styleTitle.style.fontSize='45pt'
 // Change the font case for h3 title tags to uppercase
 document.querySelectorAll("h3").forEach(function(h3) {
   h3.style.textTransform = "uppercase";
-  h3.style.marginLeft='50%';
+  h3.style.marginLeft='45%';
    h3.style.paddingBottom='5%';
+   h3.style.paddingTop='30px';
   h3.style.fontSize='30px';
   h3.style.color='white';
 
