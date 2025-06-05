@@ -42,14 +42,22 @@ document.querySelectorAll("h3").forEach(function(h3) {
 });
 
 // Add one more fruit to the fruits list
-let newFruit = document.createElement("li");
-newFruit.textContent = "Oranges";
-document.getElementById("fruList").appendChild(newFruit);
 
-// Add one more vegetable to the vegetables list
-let newVeg = document.createElement("li");
-newVeg.textContent = "Cauliflower"; 
-document.getElementById("vegList").appendChild(newVeg);
+function addFruit() {
+    const listElement = document.getElementById('fruList');
+    const newListItem = document.createElement('li');
+    newListItem.textContent = 'Mango';
+    newListItem
+    listElement.appendChild(newListItem);
+  }
+
+function addvegetable() {
+    const listElement = document.getElementById('vegList');
+    const newListItem = document.createElement('li');
+    newListItem.textContent = 'Cabbage';
+    newListItem
+    listElement.appendChild(newListItem);
+  }
 
 const newImage = document.createElement('img');
 const imageContent = document.create
