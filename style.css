@@ -1,0 +1,14 @@
+#fruit-image{
+    height: 200px;
+    width: 200px;
+    
+    box-shadow: 2px 0 10px;
+     background-color: #ddddd5;
+    
+}
+#vegetable-image{
+   height: 200px;
+    width: 200px;
+    box-shadow: 2px 0 10px;
+     background-color: #ddddd5;
+}

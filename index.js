@@ -1,0 +1,80 @@
+const image = document.getElementById('myimage');
+const styleParagraph=document.getElementById('sell');
+// const img=document.getElementById('fruit-image');
+// img.style.width='50px';
+// img.style.height='50px'
+styleParagraph.style.color='white';
+styleParagraph.style.fontSize='30pt';
+styleParagraph.style.marginLeft='40%';
+const vegetableList=document.getElementById('vegList')
+vegetableList.style.display='flex';
+vegetableList.style.gap='40px';
+vegetableList.style.marginLeft='10%';
+vegetableList.style.listStyle='none';
+
+const lists=document.getElementById('fruList')
+lists.style.display='flex';
+lists.style.gap='40px';
+lists.style.marginLeft='10%';
+lists.style.listStyle='none';
+
+
+
+
+// Change document background color to silver
+document.body.style.backgroundColor = "silver";
+
+// Change the font color for h1 title tag to green
+const styleTitle=document.getElementById('title');
+styleTitle.style.color='green';
+styleTitle.style.marginLeft='35%';
+styleTitle.style.fontSize='45pt'
+
+// Change the font case for h3 title tags to uppercase
+document.querySelectorAll("h3").forEach(function(h3) {
+  h3.style.textTransform = "uppercase";
+  h3.style.marginLeft='50%';
+   h3.style.paddingBottom='5%';
+  h3.style.fontSize='30px';
+  h3.style.color='white';
+
+});
+
+// Add one more fruit to the fruits list
+let newFruit = document.createElement("li");
+newFruit.textContent = "Oranges";
+document.getElementById("fruList").appendChild(newFruit);
+
+// Add one more vegetable to the vegetables list
+let newVeg = document.createElement("li");
+newVeg.textContent = "Cauliflower"; 
+document.getElementById("vegList").appendChild(newVeg);
+
+const newImage = document.createElement('img');
+const imageContent = document.create
+newImage.src = 'images/vegetable.jpg'
+newImage.alt = 'image';
+newImage.style.marginLeft='30%'
+newImage.style.boxShadow='2px 0 10px';
+image.appendChild(newImage);
+
+// Select all <li> elements inside #fruList and #vegList
+const fruitListItems = document.querySelectorAll('#fruList li');
+const vegListItems = document.querySelectorAll('#vegList li');
+
+// Function to set font size
+function setFontSize(list, size) {
+  list.forEach(li => {
+    li.style.fontSize = '30px'
+  
+     
+  });
+}
+
+
+setFontSize(fruitListItems, '30px');
+setFontSize(vegListItems, '30px');
+
+
+const fruitList = document.getElementById("fruList");
+const fruitBtn = document.getElementById("addFruitBtn");
