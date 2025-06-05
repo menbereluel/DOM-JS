@@ -46,7 +46,7 @@ document.querySelectorAll("h3").forEach(function(h3) {
 function addFruit() {
     const listElement = document.getElementById('fruList');
     const newListItem = document.createElement('li');
-    newListItem.textContent = 'Mango';
+    newListItem.textContent = 'Apple';
     newListItem
     listElement.appendChild(newListItem);
   }
