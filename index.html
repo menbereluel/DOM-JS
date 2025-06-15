@@ -7,27 +7,35 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
-          <h1 id="title"> Welcome to Greens Kiosk</h1>
-      <p id="sell">We sell fruits and vegetables</p>
-      <div id="myimage"></div>
-  <h3>Fruits</h3>
-  <ul id="fruList">
-    <li><img src="images/mango.png" id="fruit-image"><br>Mangoes</li>
-    <li><img  src="images/bananas.png" id="fruit-image"><br>Bananas</li>
-    <li><img  src="images/watermelon.png"id="fruit-image"><br>Water Melons</li>
-  </ul>
-  <button id="click-button" onclick="addFruit()">Add fruit</button>
-  <h3>Vegetables</h3>
-  <ul id="vegList">
-    <li><img src="images/onion.png"  id="vegetable-image"> <br>Onions</li>
-    <li><img  src="images/tomato.png" id="vegetable-image"><br>Tomatoes</li>
-    <li><img  src="images/carrot.png" id="vegetable-image"><br>Carrot</li>
-   
-  </ul>
+           <div class="container">
+    <h1 id="title">Welcome to Greens Kiosk</h1>
+    <p>We sell fruits and vegetables</p>
 
-  <button id="click-button" onclick="addvegetable()">Add vegetable</button>
+    <input type="text" id="searchInput" placeholder="Search fruits or vegetables...">
+
+    <div class="section">
+      <h3>Fruits</h3>
+      <ul id="fruList" class="item-list"></ul>
+    </div>
+
+    <div class="section">
+      <h3>Vegetables</h3>
+      <ul id="vegList" class="item-list"></ul>
+    </div>
+
+    <div id="cart">
+      <h2>🛒 Cart</h2>
+      <ul id="cartList"></ul>
+      <button id="clearCart">Clear Cart</button>
+    </div>
+  </div>
 
 <script src="index.js"></script>
+
+
+
+
+
 
 </body>
 </html>
